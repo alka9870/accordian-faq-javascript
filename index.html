@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="accordian">
+        <div class="container">
+            <div class="label">List One</div>
+            <div class="content">
+                <p>Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie. Lorem Ipsum je štandardným výplňovým textom už od 16. storočia, keď neznámy tlačiar zobral sadzobnicu plnú tlačových znakov a pomiešal ich, aby tak vytvoril vzorkovú knihu.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="label">List Two</div>
+            <div class="content">
+                <p>Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie. Lorem Ipsum je štandardným výplňovým textom už od 16. storočia, keď neznámy tlačiar zobral sadzobnicu plnú tlačových znakov a pomiešal ich, aby tak vytvoril vzorkovú knihu.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="label">List Three</div>
+            <div class="content">
+                <p>Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie. Lorem Ipsum je štandardným výplňovým textom už od 16. storočia, keď neznámy tlačiar zobral sadzobnicu plnú tlačových znakov a pomiešal ich, aby tak vytvoril vzorkovú knihu.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="label">List Four</div>
+            <div class="content">
+                <p>Lorem Ipsum je fiktívny text, používaný pri návrhu tlačovín a typografie. Lorem Ipsum je štandardným výplňovým textom už od 16. storočia, keď neznámy tlačiar zobral sadzobnicu plnú tlačových znakov a pomiešal ich, aby tak vytvoril vzorkovú knihu.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const accordian = document.getElementsByClassName('container');
+        for(i=0; i<accordian.length; i++){
+            accordian[i].addEventListener('click', function(){
+                this.classList.toggle('active');
+            })
+        }
+    </script>
+</body>
+</html>
